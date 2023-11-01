@@ -5,16 +5,81 @@ html {
 body {
     display: grid;
     grid-template-rows: 210px 1fr;
-    grid-template-columns: 350px 1fr;
+    grid-template-columns: minmax(200px, 250px) 1fr;
     height: 100%;
 }
 
 header {
     background-color: aquamarine;
     grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+
+}
+
+.search-area {
+    background-color: brown;
+    height: 20px;
+}
+
+.top-area {
+    background-color: green;
+    height: 20px
 }
 
 .sidebar {
     background-color: blueviolet;
     grid-area: 1 / 1 / -1 / 2;
+    display: grid;
+    grid-template-rows: 50px 2fr 1fr 1fr;
+    color: blanchedalmond;
+    text-align: center;
+    line-height: 50px;
+}
+
+.side-menu-one {
+    background-color: gold;
+}
+
+.side-menu-two {
+    background-color: rgb(88%, 87%, 21%);
+}
+
+.main-content {
+    background-color: rgb(42%, 24%, 7%);
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    padding: 50px;
+
+}
+
+.card-area {
+    display: grid;
+    grid-template-columns: repeat(3, clamp(100px, 25%, 200px));
+    grid-template-rows: 1fr 1fr;
+    gap: 40px;
+}
+
+.card {
+    background-color: rgb(13%, 2%, 88%);
+
+}
+
+.main-content > aside {
+    background-color: rgb(30%, 79%, 69%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 20px;
+}
+
+.announcements {
+    background-color: rgb(52%, 50%, 30%);
+}
+
+.trending {
+    background-color: rgb(30%, 28%, 90%);
 }
