@@ -1,2 +1,8 @@
 # favicon 
 dashboard by Gregor Cresnar from <a href="https://thenounproject.com/browse/icons/term/dashboard/" target="_blank" title="dashboard Icons">Noun Project</a> (CC BY 3.0)
+
+# bell icon
+<a href="https://www.flaticon.com/free-icons/alert" title="alert icons">Alert icons created by Pixel perfect - Flaticon</a>
+
+# profile pic
+<a href=https://www.pngall.com/profile-png/download/51505 target="_blank">User Profile PNG Free Download</a>
