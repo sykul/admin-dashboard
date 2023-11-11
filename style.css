@@ -22,7 +22,12 @@ header {
     height: 60px;
     display: grid;
     grid-template-columns: 50px 1000px 100px 100px 100px 100px;
-    justify-items: middle;
+    align-items: center;
+}
+
+.search-area > * {
+    display: grid;
+    align-items: center;
 }
 
 .search-bar {
