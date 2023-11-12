@@ -1,5 +1,7 @@
+
 html {
     height: 100%;
+    box-sizing: border-box;
 }
 
 body {
@@ -14,14 +16,17 @@ header {
     grid-area: 1 / 2 / 2 / 3;
     display: grid;
     padding: 50px;
-    gap: 20px;
+    gap: 10px;
+    grid-template-columns: 130px 1400px;
+    grid-template-rows: 60px 60px;
+    border: 1px red solid;
 }
 
 .search-area {
     background-color: white;
     height: 60px;
     display: grid;
-    grid-template-columns: 50px 1000px 100px 100px 100px 100px;
+    grid-template-columns: 1000px 100px 100px 100px 100px;
     align-items: center;
 }
 
@@ -30,12 +35,23 @@ header {
     align-items: center;
 }
 
+.icon {
+    background-color: #1992d4;
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
 .search-bar {
     width: 100%;
     line-height: 60px;
-    height: 20px;
+    height: 40px;
     background-color: #e2e8f0;
-    border-radius: 5px;
+    border-radius: 10px;
+    padding: 0;
+    border: none;
+    cursor: text;
 }
 
 .bell > img {
@@ -51,7 +67,16 @@ header {
 .top-area {
     background-color: white;
     height: 60px;
+    border: 1px yellowgreen solid;
+    grid-area: 2 / 2 / 3 / 3;
 }
+
+.top-area > * {
+    display: grid;
+    align-items: center;
+    border: 1px purple solid;
+}
+
 
 .sidebar {
     background-color: #1992d4;
@@ -76,7 +101,6 @@ header {
     display: grid;
     grid-template-columns: 600px 200px;
     padding: 50px;
-
 }
 
 .card-area {
@@ -96,11 +120,15 @@ header {
 .card-area > aside {
     border: red 1px solid;
     display: grid;
+    grid-template-rows: 470px 470px;
     gap: 20px;
     padding: 20px;
     grid-area: 1 / 3 / 4 / 4;
     border-radius: 5px;
+}
 
+.card-area > aside > * {
+    border: 1px rebeccapurple solid;
 }
 
 .announcements {
