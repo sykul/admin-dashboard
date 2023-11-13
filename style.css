@@ -131,15 +131,27 @@ header {
     border: 1px rebeccapurple solid;
 }
 
+.card-area aside h3 {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
 .announcements {
     border: red 1px solid;
     background-color: white;
     height: 400px;
     border-radius: 5px;
+    display: grid;
+    grid-template-rows: auto auto auto;
 }
 
 .trending {
     border: red 1px solid;
     background-color: white;
     height: 400px;
+    display: grid;
+}
+
+hr.solid {
+    border-bottom: 3px solid black;
 }
