@@ -152,6 +152,9 @@ header {
     display: grid;
 }
 
-hr.solid {
-    border-bottom: 3px solid black;
+.announcements > div:nth-child(-n+2), .trending > div:nth-child(-n+2) {
+    display: block;
+    width: 70%;
+    margin: 1em auto 0;
+    border-bottom: solid;
 }
