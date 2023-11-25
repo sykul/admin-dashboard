@@ -88,6 +88,10 @@ header {
     line-height: 50px;
 }
 
+.dashboard-icon {
+    width: 50px;
+}
+
 .side-menu-one {
     border: red 1px solid;
 }
