@@ -26,7 +26,7 @@ header {
     background-color: white;
     height: 60px;
     display: grid;
-    grid-template-columns: 800px 50px 60px 60px 100px;
+    grid-template-columns: 50px 800px 50px 60px 60px 100px;
     align-items: center;
 }
 
