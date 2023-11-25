@@ -88,7 +88,7 @@ header {
     line-height: 50px;
 }
 
-.dashboard-icon {
+.dashboard-icon, .side-menu-one-item > img, .side-menu-two-item > img {
     width: 50px;
 }
 
