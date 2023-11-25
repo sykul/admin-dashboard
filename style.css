@@ -6,7 +6,7 @@ html {
 
 body {
     display: grid;
-    grid-template-rows: 210px 1fr;
+    grid-template-rows: 260px 1fr;
     grid-template-columns: minmax(300px, 400px) 1fr;
     height: 100%;
 }
@@ -15,10 +15,10 @@ header {
     background-color: white;
     grid-area: 1 / 2 / 2 / 3;
     display: grid;
-    padding: 50px;
+    padding: 40px;
     gap: 10px;
-    grid-template-columns: 130px 1400px;
-    grid-template-rows: 60px 60px;
+    grid-template-columns: 130px 1000px;
+    grid-template-rows: 100px 100px;
     border: 1px red solid;
 }
 
@@ -26,7 +26,7 @@ header {
     background-color: white;
     height: 60px;
     display: grid;
-    grid-template-columns: 1000px 100px 100px 100px 100px;
+    grid-template-columns: 800px 50px 60px 60px 100px;
     align-items: center;
 }
 
@@ -38,9 +38,9 @@ header {
 .icon {
     background-color: #1992d4;
     border-radius: 50%;
-    height: 130px;
-    width: 130px;
-    grid-area: 1 / 1 / 2 / 2;
+    height: 100px;
+    width: 100px;
+    grid-area: 2 / 1 / 2 / 2;
 }
 
 .search-bar {
