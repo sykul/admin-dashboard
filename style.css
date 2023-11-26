@@ -2,6 +2,7 @@
 html {
     height: 100%;
     box-sizing: border-box;
+    font-family: 'Roboto';
 }
 
 body {
@@ -9,6 +10,10 @@ body {
     grid-template-rows: 260px 1fr;
     grid-template-columns: minmax(300px, 400px) 1fr;
     height: 100%;
+}
+
+li {
+    list-style: none;
 }
 
 header {
@@ -69,35 +74,50 @@ header {
     height: 60px;
     border: 1px yellowgreen solid;
     grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto auto;
 }
 
 .top-area > * {
     display: grid;
-    align-items: center;
     border: 1px purple solid;
 }
 
+.top-area > button {
+    width: 100px;
+}
 
 .sidebar {
     background-color: #1992d4;
     grid-area: 1 / 1 / -1 / 2;
     display: grid;
     grid-template-rows: 50px 1fr 1fr 1fr;
+    align-items: start;
+    justify-content: left;
     color: blanchedalmond;
     text-align: center;
     line-height: 50px;
+    font-size: 24px;
 }
 
 .dashboard-icon, .side-menu-one-item > img, .side-menu-two-item > img {
     width: 50px;
+    color: white;
 }
 
 .side-menu-one {
     border: red 1px solid;
+    display: grid;
+    justify-items: left;
+    align-content: start;
 }
 
 .side-menu-two {
     border: red 1px solid;
+    display: grid;
+    justify-items: left;
+    align-content: start;
 }
 
 .main-content {
@@ -136,7 +156,7 @@ header {
 }
 
 .card-area aside h3 {
-    font-size: 25px;
+    font-size: 26px;
     margin-bottom: 5px;
 }
 
@@ -166,4 +186,8 @@ header {
 
 .card, .announcements, .trending {
     box-shadow: 5px 5px 5px #b2b9c2;
+}
+
+svg {
+    background-color: white;
 }
