@@ -24,7 +24,6 @@ header {
     gap: 10px;
     grid-template-columns: 130px 1000px;
     grid-template-rows: 100px 100px;
-    border: 1px red solid;
 }
 
 .search-area {
@@ -75,13 +74,9 @@ header {
     border: 1px yellowgreen solid;
     grid-area: 2 / 2 / 3 / 3;
     display: grid;
+
     align-items: center;
     grid-template-columns: auto auto auto;
-}
-
-.top-area > * {
-    display: grid;
-    border: 1px purple solid;
 }
 
 .top-area > button {
@@ -107,14 +102,12 @@ header {
 }
 
 .side-menu-one {
-    border: red 1px solid;
     display: grid;
     justify-items: left;
     align-content: start;
 }
 
 .side-menu-two {
-    border: red 1px solid;
     display: grid;
     justify-items: left;
     align-content: start;
@@ -127,37 +120,49 @@ header {
     padding: 50px;
 }
 
+.your-projects {
+    grid-column: 1 / 4;
+}
+
 .card-area {
     display: grid;
-    grid-template-columns: repeat(2, clamp(450px, 50%, 550px)) 300px;
-    grid-template-rows: repeat(3, 300px);
-    gap: 40px;
+    grid-template-columns: repeat(2, clamp(450px, 50%, 550px)) 400px;
+    grid-template-rows: 20px repeat(3, 300px);
+    gap: 20px;
 }
 
 .card {
     background-color: white;
     border-radius: 5px;
     border-left: 10px orange solid;
+    margin: 0px;
     padding: 7px 5px 5px 10px;
 }
 
 .card-area > aside {
-    border: red 1px solid;
     display: grid;
-    grid-template-rows: 470px 470px;
-    gap: 20px;
-    padding: 20px;
-    grid-area: 1 / 3 / 4 / 4;
+    grid-template-rows: 400px 500px;
+/*     grid-template-columns: 400px; */
+    gap: 70px;
+    grid-area: 2 / 3 / 5 / 4;
     border-radius: 5px;
 }
 
-.card-area > aside > * {
-    border: 1px rebeccapurple solid;
+.card-area aside > div {
+    width: 100%;
 }
 
-.card-area aside h3 {
+.card-area aside div h3 {
     font-size: 26px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.card-area aside div:nth-child(1) h3 {
+    margin-top: 0px;
+}
+
+.card-area aside div:nth-child(2) h3 {
+    margin-top: 10px;
 }
 
 .announcements {
